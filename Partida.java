@@ -37,15 +37,6 @@ public class Partida{
   //Iniciar Partida
   public void iniciarPartida(){
     
-    //recebendo o tamanho dos nomes, se algum for 0 signica que falta um time.
-    int vis = visitante.getNome().length(), loc = local.getNome().length();
-
-    if(vis<1 || loc<1){
-      System.out.println("É necessário ter 2 times para iniciar uma partida!!!");
-      return;
-    }
-    //se no final da checagem estiver ok, a partida começa.
-    
     //gerando placares aleatorios
     Random random = new Random();
     this.scoreVisitante = random.nextInt(10);
